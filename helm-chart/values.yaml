@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: nr-bank-app-helm-full
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 3000
+  nodePort: 30080
+
+newRelic:
+  licenseKey: "517e6644f89f38d856113b759b67439dFFFFNRAL"
