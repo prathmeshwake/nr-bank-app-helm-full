@@ -1,12 +1,12 @@
 replicaCount: 1
 
 image:
-  repository: nr-bank-app-helm-full
+  repository: prathmeshwake/nr-bank-app-helm-full
   tag: latest
   pullPolicy: IfNotPresent
 
 service:
-  type: NodePort
+  type: NodePorts
   port: 3000
   nodePort: 30080
 
